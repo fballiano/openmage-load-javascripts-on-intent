@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Fballiano_LoadJavascriptsOnIntent>
+            <version>0.1.0</version>
+        </Fballiano_LoadJavascriptsOnIntent>
+    </modules>
+    <global>
+        <models>
+            <fballiano_loadjavascriptsonintent>
+                <class>Fballiano_LoadJavascriptsOnIntent_Model</class>
+            </fballiano_loadjavascriptsonintent>
+        </models>
+    </global>
+    <frontend>
+        <events>
+            <http_response_send_before>
+                <observers>
+                    <fballiano_javascriptloadonintent>
+                        <class>fballiano_loadjavascriptsonintent/observer</class>
+                        <method>httpResponseSendBefore</method>
+                    </fballiano_javascriptloadonintent>
+                </observers>
+            </http_response_send_before>
+        </events>
+    </frontend>
+</config>

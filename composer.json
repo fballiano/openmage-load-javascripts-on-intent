@@ -1,0 +1,25 @@
+{
+  "name": "fballiano/openmage-load-javascripts-on-intent",
+  "license": "OSL-3.0",
+  "type": "magento-module",
+  "description": "Only load javascripts when the user interacts with the page.",
+  "homepage": "https://github.com/fballiano/openmage-load-javascripts-on-intent",
+  "require": {
+    "php": ">=7.4.0",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Fabrizio Balliano",
+      "email": "fabrizio@fabrizioballiano.com",
+      "homepage": "http://fabrizioballiano.com",
+      "role": "Developer"
+    }
+  ]
+}
