@@ -7,10 +7,14 @@
  */
 class Fballiano_LoadJavascriptsOnIntent_Model_Observer
 {
-    public function httpResponseSendBefore(Varien_Event_Observer $observer)
+    public function httpResponseSendBefore(Varien_Event_Observer $observer): void
     {
         $response = $observer->getResponse();
         $html = $response->getBody();
+
+        if (str_contains($html, 'FbLoadScripts')) {
+            return;
+        }
 
         $pattern = '/<script([^>]*?)>/iU';
         $html = preg_replace_callback($pattern, function($matches) {
