@@ -1,6 +1,8 @@
 OpenMage Load Javascripts On Intent
 =================================
 
+**THIS MODULE IS IN ALPHA STAGE AND IT'S NOT WORKING YET**
+
 What to obtain 100% PageSpeed score? Install this module then ;-)
 
 What does it do? it proceses the HTML of every page, converting all javascript to `text/plain`,
